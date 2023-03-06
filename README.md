@@ -42,3 +42,15 @@ function draw() {
   rect(0, 370, 400, 30)
 ```
 Link to this Sketch: https://editor.p5js.org/Sophiek/sketches/3o2MH2KkO
+
+## Question 2 
+For this assignment I copied and pasted the previos code into a new sketch
+I added an if(mousepressed) statement to make the frog look like it was sticking its tongue out.
+```Javascript
+  if (mouseIsPressed){
+  noFill()
+  strokeWeight(10)
+  stroke("red")
+  line(50, 60, 90, 30)
+ ```
+ Link to sketch: https://editor.p5js.org/Sophiek/sketches/56NBVxcnG 
