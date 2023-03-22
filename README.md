@@ -44,7 +44,7 @@ function draw() {
 Link to this Sketch: https://editor.p5js.org/Sophiek/sketches/3o2MH2KkO
 
 ## Question 2 
-For this assignment I copied and pasted the previos code into a new sketch
+For this assignment I copied and pasted the previous code into a new sketch
 I added an if(mousepressed) statement to make the frog look like it was sticking its tongue out.
 ```Javascript
   if (mouseIsPressed){
@@ -54,3 +54,18 @@ I added an if(mousepressed) statement to make the frog look like it was sticking
   line(50, 60, 90, 30)
  ```
  Link to sketch: https://editor.p5js.org/Sophiek/sketches/56NBVxcnG 
+ 
+ ## Question 3
+ For this part I created a function that drew a seed and I set seedX and seedY as the parameters of the circle. 
+ ```Javascript
+ function seed(seedX, seedY){
+  fill("black")
+  ellipse(seedX,seedY,10)
+ ```
+ I  put seenX and seedY in setup and made them equal to random through 400 witha  speed of 3 for when the seed falls form the top of the canvas.
+ Lastly in draw I wrote the equation 
+```Javascript
+  seedY = seedY + speed 
+ ```
+So the seed would fall from the top of the canvas to the bottom when the sketch is played. 
+Link to Sketch: https://editor.p5js.org/Sophiek/sketches/gAVpjqeS_
