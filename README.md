@@ -69,3 +69,33 @@ I added an if(mousepressed) statement to make the frog look like it was sticking
  ```
 So the seed would fall from the top of the canvas to the bottom when the sketch is played. 
 Link to Sketch: https://editor.p5js.org/Sophiek/sketches/gAVpjqeS_
+
+##Question 4
+For this part I added on to the previous code 
+I added variables in setup for frogIsFed and seedIsFalling which were both true. 
+
+Next in draw I added three if statements seen here.
+```Javascript
+  if (seedY > ground) {
+    seedIsFalling = false;
+    seedY = 0;
+  }
+  if (seedIsFalling) {
+    seedY = seedY + speed;
+  }
+  let d = dist(mouseX, ground, seedX, seedY);
+  if (d < 50) {
+    frogIsFed = true;
+  } else {
+    frogIsFed = false;
+  }
+```
+The first statement resets the seed to the top of the cavas when it hits the ground. 
+The second statement is the seedIsfalling statement that makes the seed fall from the top of the canvas for the frog to eat it. 
+The last statement is an if else statement using distance to amke the frog eat the seed, this means when the seed collides with the frog it will smile and not have his tongue out. This code I changed in the drawFrog function.
+For that I made drawing the frog an if esele statement and making the frog always have their tongue out and if the frog is not fed keeo the tongue out. 
+Link: https://editor.p5js.org/Sophiek/sketches/gAVpjqeS_ 
+
+## Question 4
+for the last assignment I kept everything the same but in setup I changed the seed from 4 to random, between 1-8. 
+Link: https://editor.p5js.org/Sophiek/sketches/ilimUf1Pg
